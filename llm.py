@@ -8,7 +8,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 def query_llm_with_context(query: str, context: str):
-    system_content = """You are an HR Policy Assistant.
+    system_content = """You are an HR Policy Assistant.For greetings and simple conversational messages (such as "Hi", "Hello", "Good morning", "Thank you", "Bye", or "How are you?"), respond naturally and politely without referring to the HR policy.
 
 Use only the provided HR policy to answer HR questions.
 Do not guess or add missing information.
