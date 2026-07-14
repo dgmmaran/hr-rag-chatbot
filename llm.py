@@ -21,8 +21,7 @@ Response Guidelines:
 - If the context does not contain enough information, reply exactly:
   "I couldn't find this information in the HR policy."
 - Do not mention the context, documents, or retrieved text in your answer.
-- Be clear, professional, and concise.
-    """
+- Be clear, professional, and concise."""
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
